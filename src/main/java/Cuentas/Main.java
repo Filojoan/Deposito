@@ -8,18 +8,18 @@ public class Main {
 
         cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
-        System.out.println("El saldo actual es "+ saldoActual );
+        System.out.println("El saldo actual és "+ saldoActual );
 
         try {
             cuenta1.retirar(2300);
         } catch (Exception e) {
-            System.out.print("Fallo al retirar");
+            System.out.print("Errada en retirar");
         }
         try {
-            System.out.println("Ingreso en cuenta");
+            System.out.println("Ingrés a compte");
             cuenta1.ingresar(695);
         } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
+            System.out.print("Errada en ingressar");
         }
 
     }
@@ -32,13 +32,13 @@ public class Main {
         try {
             cuenta1.retirar(cantidad);
         } catch (Exception e) {
-            System.out.print("Fallo al retirar");
+            System.out.print("Errada en retirar");
         }
         try {
-            System.out.println("Ingreso en cuenta");
+            System.out.println("Ingrés a compte");
             cuenta1.ingresar(695);
         } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
+            System.out.print("Errada en ingressar");
         }
     }
 }
